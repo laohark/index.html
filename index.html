@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PASSWORD SCREEN -->
+    <div id="login-screen">
+        <div class="login-card">
+            <h1>💕 Our Memories 💕</h1>
+            <p>Welcome to Our Little World</p>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+            >
+
+            <button onclick="checkPassword()">
+                Unlock ❤️
+            </button>
+
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <!-- MAIN WEBSITE -->
+    <div id="website-content" style="display: none;">
+
+        <header>
+            <h1>💕 Our Memories 💕</h1>
+            <p>Welcome to Our Little World</p>
+        </header>
+
+        <section class="welcome">
+            <h2>Hello, My Special Person ❤️</h2>
+            <p>Every moment becomes a beautiful memory.</p>
+
+            <button onclick="showMessage()">
+                Open My Message 💌
+            </button>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="gallery">
+            <h2>Our Beautiful Memories 📸</h2>
+
+            <div class="photo-container">
+
+                <div class="photo-card">
+                    <img src="images/photo1.jpg" alt="Memory 1">
+                    <p>Our First Memory ❤️</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo2.jpg" alt="Memory 2">
+                    <p>Beautiful Moments 🌸</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="images/photo3.jpg" alt="Memory 3">
+                    <p>Forever Memories 💕</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="love-story">
+            <h2>Our Love Story 💗</h2>
+
+            <div class="timeline">
+                <div class="memory">
+                    <h3>🌸 The Day We Met</h3>
+                    <p>The beginning of our beautiful memories.</p>
+                </div>
+
+                <div class="memory">
+                    <h3>📸 Our First Photo</h3>
+                    <p>A special moment to remember forever.</p>
+                </div>
+
+                <div class="memory">
+                    <h3>💕 Special Moments</h3>
+                    <p>Every little moment is meaningful.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="love-letter">
+            <h2>A Letter For You 💌</h2>
+
+            <div class="letter-card">
+                <h3>To My Special Person ❤️</h3>
+
+                <p>
+                    Thank you for being part of my life.
+                    Every little moment is special.
+                    I hope we create many more beautiful
+                    memories together. 💕
+                </p>
+
+                <p class="signature">With Love ❤️</p>
+            </div>
+        </section>
+
+        <section class="music-player">
+            <h2>Our Favourite Song 🎵</h2>
+            <p>A song for our memories ❤️</p>
+
+            <audio controls loop>
+                <source src="music/Our_song.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+
+        <footer>
+            Made with Love ❤️
+        </footer>
+
+    </div>
+
+    <div id="hearts-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
