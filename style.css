@@ -1,0 +1,294 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #fff5f8;
+    color: #75445b;
+    text-align: center;
+}
+
+/* PASSWORD SCREEN */
+#login-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background:
+        radial-gradient(circle at top left, #fff0f5, transparent 40%),
+        linear-gradient(135deg, #ffc1d6, #ff80ab, #f8bbd0);
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 45px 25px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 12px 35px #c96d9560;
+}
+
+.login-card h1 {
+    color: #e75480;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.login-card p {
+    line-height: 1.7;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border: 2px solid #ffc0cb;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: #e75480;
+}
+
+#error-message {
+    color: #d6336c;
+    margin-top: 15px;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+    padding: 75px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    text-shadow: 2px 3px 5px #b84b79;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(135deg, #ff69b4, #e75480);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px #e7548070;
+}
+
+/* WELCOME */
+.welcome {
+    background: white;
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 50px 25px;
+    border-radius: 30px;
+    box-shadow: 0 8px 25px #e8b8c880;
+}
+
+.welcome h2 {
+    color: #e75480;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.welcome p {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* GALLERY */
+.gallery {
+    padding: 50px 20px;
+}
+
+.gallery h2,
+.love-story h2,
+.love-letter h2,
+.music-player h2 {
+    color: #e75480;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.photo-card {
+    background: white;
+    padding: 15px;
+    width: 260px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #e8b8c880;
+    transition: 0.3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-8px) rotate(1deg);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.photo-card p {
+    margin-top: 15px;
+    color: #d63384;
+    font-weight: bold;
+}
+
+/* LOVE STORY */
+.love-story {
+    padding: 55px 20px;
+}
+
+.timeline {
+    max-width: 650px;
+    margin: auto;
+}
+
+.memory {
+    background: white;
+    padding: 30px;
+    margin: 22px 0;
+    border-radius: 22px;
+    box-shadow: 0 6px 20px #e8b8c880;
+    border-left: 5px solid #ff80ab;
+}
+
+.memory h3 {
+    color: #e75480;
+    margin-bottom: 15px;
+}
+
+/* LOVE LETTER */
+.love-letter {
+    padding: 50px 20px;
+}
+
+.letter-card {
+    background: #fff;
+    max-width: 620px;
+    margin: auto;
+    padding: 40px 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #e8b8c880;
+    line-height: 2;
+}
+
+.letter-card h3 {
+    color: #e75480;
+    margin-bottom: 20px;
+}
+
+.signature {
+    margin-top: 20px;
+    color: #e75480;
+    font-weight: bold;
+}
+
+/* MUSIC */
+.music-player {
+    background: white;
+    max-width: 550px;
+    margin: 45px auto;
+    padding: 40px 25px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px #e8b8c880;
+}
+
+.music-player audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #ffc0cb;
+    padding: 30px;
+    color: #75445b;
+}
+
+/* FLOATING HEARTS */
+#hearts-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.heart {
+    position: absolute;
+    bottom: -40px;
+    animation: floatUp 7s linear forwards;
+    opacity: 0.8;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .welcome {
+        margin: 30px 15px;
+    }
+
+    .photo-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .letter-card {
+        padding: 25px 18px;
+    }
+
+    .music-player {
+        margin: 30px 15px;
+    }
+}
