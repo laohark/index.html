@@ -29,3 +29,10 @@ function createHeart() {
 }
 
 setInterval(createHeart, 1000);
+function openMessage() {
+    const message = document.getElementById("my-message");
+
+    if (message) {
+        message.style.display = "block";
+    }
+}
